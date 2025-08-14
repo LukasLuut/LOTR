@@ -10,7 +10,7 @@ export class CharacterController {
       if (i.type === "Sociedade") mensagem = "Corram seus tolos!";
       if (i.type === "Nazgûl") mensagem = "Os Nazgûl não estão em Moria.";
       if (i.type === "Balrog") mensagem = "Você não vai passar!";
-      return { ...i /*mensagem*/ };
+      return { ...i, mensagem };
     });
 
     return res.status(200).json(result);
